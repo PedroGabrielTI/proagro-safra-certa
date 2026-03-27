@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import zhongshanLogo from "@/assets/zhongshan-logo-card.png";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -72,6 +73,27 @@ export function HeroSection() {
             >
               Ver produtos disponíveis
             </Button>
+          </div>
+
+          {/* Selo visual de parceria */}
+          <div
+            className="mt-10 flex justify-center animate-fade-up"
+            style={{ animationDelay: "0.4s" }}
+          >
+            <div className="relative inline-flex">
+              <div className="absolute -inset-3 rounded-[2rem] border border-white/20 bg-white/10 backdrop-blur-sm" />
+              <div className="absolute -top-3 -left-3 h-8 w-8 rounded-full border-2 border-accent/80 bg-accent/15" />
+              <div className="absolute -right-4 -bottom-4 h-12 w-12 rounded-full border border-white/25 bg-white/10" />
+              <div className="relative rounded-[1.75rem] border border-white/20 bg-white/95 p-4 shadow-2xl shadow-black/20">
+                <div className="rounded-[1.25rem] border border-dashed border-primary/25 bg-slate-100 px-4 py-3">
+                  <img
+                    src={zhongshanLogo}
+                    alt="Logo Zhongshan Chemical"
+                    className="h-auto w-[220px] sm:w-[260px] md:w-[300px]"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
