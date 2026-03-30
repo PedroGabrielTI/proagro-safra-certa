@@ -76,16 +76,14 @@ export function HeroSection() {
           </div>
 
           <div
-            className="mt-7 md:mt-8 flex justify-center animate-fade-up"
+            className="mt-8 md:mt-10 flex justify-center animate-fade-up"
             style={{ animationDelay: "0.4s" }}
           >
-            <div className="rounded-[22px] border border-white/25 bg-white/92 backdrop-blur-sm shadow-[0_18px_50px_rgba(0,0,0,0.18)] px-5 py-4 md:px-6 md:py-4">
-              <img
-                src={zhongshanLogo}
-                alt="Zhongshan Chemical"
-                className="h-auto w-[210px] md:w-[250px] object-contain"
-              />
-            </div>
+            <img
+              src={zhongshanLogo}
+              alt="Zhongshan Chemical"
+              className="h-auto w-[220px] sm:w-[250px] md:w-[290px] object-contain opacity-95 drop-shadow-[0_10px_28px_rgba(0,0,0,0.22)]"
+            />
           </div>
         </div>
       </div>
