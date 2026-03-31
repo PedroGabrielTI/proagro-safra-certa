@@ -39,18 +39,13 @@ export function AboutSection() {
               </p>
             </div>
 
-            {/* Zhongshan Partner Badge */}
-            <div className="mt-8 flex flex-col gap-2">
-              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                Indústria parceira
-              </p>
-              <div className="inline-flex items-center bg-zinc-900 rounded-xl px-5 py-3 shadow-md w-fit">
-                <img
-                  src={zhongshanLogo}
-                  alt="Zhongshan Chemical"
-                  className="h-8 w-auto"
-                />
-              </div>
+            {/* Zhongshan Logo */}
+            <div className="mt-8">
+              <img
+                src={zhongshanLogo}
+                alt="Zhongshan Chemical"
+                className="h-14 sm:h-16 w-auto opacity-80 hover:opacity-100 transition-opacity"
+              />
             </div>
           </div>
 
