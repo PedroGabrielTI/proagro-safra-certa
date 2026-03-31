@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import zhongshanLogo from "@/assets/zhongshan-logo-transparent-final.png";
+import zhongshanLogo from "@/assets/zhongshan-logo-mixed-light.png";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -57,32 +57,30 @@ export function HeroSection() {
           </div>
 
           {/* CTAs */}
-          <div className="animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button
-                variant="hero"
-                size="xl"
-                onClick={() => window.open("https://wa.me/5500000000000", "_blank")}
-              >
-                <MessageCircle className="w-5 h-5" />
-                Quero falar com a Proagro
-              </Button>
-              <Button
-                variant="heroOutline"
-                size="xl"
-                onClick={() => scrollToSection("#produtos")}
-              >
-                Ver produtos disponíveis
-              </Button>
-            </div>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <Button
+              variant="hero"
+              size="xl"
+              onClick={() => window.open("https://wa.me/5500000000000", "_blank")}
+            >
+              <MessageCircle className="w-5 h-5" />
+              Quero falar com a Proagro
+            </Button>
+            <Button
+              variant="heroOutline"
+              size="xl"
+              onClick={() => scrollToSection("#produtos")}
+            >
+              Ver produtos disponíveis
+            </Button>
+          </div>
 
-            <div className="mt-8 md:mt-10 flex justify-center">
-              <img
-                src={zhongshanLogo}
-                alt="Zhongshan Chemical"
-                className="w-[150px] sm:w-[170px] md:w-[190px] h-auto opacity-95 drop-shadow-[0_4px_14px_rgba(0,0,0,0.18)]"
-              />
-            </div>
+          <div className="mt-10 md:mt-12 flex justify-center animate-fade-up" style={{ animationDelay: "0.38s" }}>
+            <img
+              src={zhongshanLogo}
+              alt="Zhongshan Chemical"
+              className="w-[170px] sm:w-[190px] md:w-[220px] h-auto opacity-95 drop-shadow-[0_4px_18px_rgba(0,0,0,0.22)] select-none"
+            />
           </div>
         </div>
       </div>
