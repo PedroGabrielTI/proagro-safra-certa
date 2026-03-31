@@ -41,12 +41,13 @@ export function AboutSection() {
 
             {/* Zhongshan Logo */}
             <div className="mt-10 pt-8 border-t border-border">
-              <img
-                src={zhongshanLogo}
-                alt="Zhongshan Chemical"
-                className="h-20 sm:h-24 w-auto hover:opacity-100 transition-opacity"
-                style={{ mixBlendMode: "screen" }}
-              />
+              <div className="inline-block bg-zinc-950 rounded-xl px-6 py-4">
+                <img
+                  src={zhongshanLogo}
+                  alt="Zhongshan Chemical"
+                  className="h-20 sm:h-24 w-auto"
+                />
+              </div>
             </div>
           </div>
 
