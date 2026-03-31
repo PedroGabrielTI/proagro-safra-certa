@@ -44,15 +44,26 @@ export function AboutSection() {
               <div
                 style={{
                   display: "inline-flex",
+                  flexDirection: "column",
                   alignItems: "center",
                   justifyContent: "center",
-                  padding: "14px 24px",
+                  padding: "12px 24px 14px",
                   border: "2.5px dashed rgba(30,80,40,0.4)",
                   borderRadius: "10px",
                   transform: "rotate(-1.5deg)",
                   opacity: 0.85,
+                  gap: "6px",
                 }}
               >
+                <span style={{
+                  fontSize: "10px",
+                  fontWeight: 700,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "rgba(30,80,40,0.6)",
+                }}>
+                  Agente Oficial
+                </span>
                 <img
                   src={zhongshanLogo}
                   alt="Zhongshan Chemical"
