@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import zhongshanLogo from "@/assets/zhongshan-logo-hero-white.png";
+import zhongshanLogo from "@/assets/zhongshan-logo-transparent-final.png";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -57,7 +57,7 @@ export function HeroSection() {
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col items-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
+          <div className="animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button
                 variant="hero"
@@ -76,12 +76,11 @@ export function HeroSection() {
               </Button>
             </div>
 
-            <div className="mt-6 md:mt-7 flex justify-center">
+            <div className="mt-8 md:mt-10 flex justify-center">
               <img
                 src={zhongshanLogo}
                 alt="Zhongshan Chemical"
-                className="w-[180px] sm:w-[210px] md:w-[240px] h-auto opacity-95 drop-shadow-[0_8px_22px_rgba(0,0,0,0.22)] select-none"
-                loading="eager"
+                className="w-[150px] sm:w-[170px] md:w-[190px] h-auto opacity-95 drop-shadow-[0_4px_14px_rgba(0,0,0,0.18)]"
               />
             </div>
           </div>
