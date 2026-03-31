@@ -1,4 +1,5 @@
 import { Sprout, ShieldCheck, Target } from "lucide-react";
+import zhongshanLogo from "@/assets/zhongshan-logo.png";
 const pillars = [{
   icon: Sprout,
   title: "Raiz no agro",
@@ -36,6 +37,20 @@ export function AboutSection() {
                 produtor acesso direto a defensivos de qualidade, com preço justo e 
                 relação transparente.
               </p>
+            </div>
+
+            {/* Zhongshan Partner Badge */}
+            <div className="mt-8 flex flex-col gap-2">
+              <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                Indústria parceira
+              </p>
+              <div className="inline-flex items-center bg-zinc-900 rounded-xl px-5 py-3 shadow-md w-fit">
+                <img
+                  src={zhongshanLogo}
+                  alt="Zhongshan Chemical"
+                  className="h-8 w-auto"
+                />
+              </div>
             </div>
           </div>
 

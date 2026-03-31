@@ -1,4 +1,5 @@
 import logoProagroBranca from "@/assets/logo-proagro-branca.png";
+import zhongshanLogo from "@/assets/zhongshan-logo.png";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,6 +18,19 @@ export function Footer() {
               Defensivos genéricos para o produtor que pensa em safra.
             </p>
           </div>
+
+          <div className="flex flex-col items-center gap-2">
+              <p className="text-primary-foreground/50 text-xs font-semibold uppercase tracking-widest">
+                Indústria parceira
+              </p>
+              <div className="bg-zinc-900 rounded-lg px-4 py-2">
+                <img
+                  src={zhongshanLogo}
+                  alt="Zhongshan Chemical"
+                  className="h-7 w-auto opacity-90 hover:opacity-100 transition-opacity"
+                />
+              </div>
+            </div>
 
           <div className="flex flex-col items-center md:items-end gap-2">
             <p className="text-primary-foreground/60 text-sm">
