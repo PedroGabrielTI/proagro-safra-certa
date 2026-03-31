@@ -1,5 +1,5 @@
 import { Sprout, ShieldCheck, Target } from "lucide-react";
-import zhongshanLogo from "@/assets/zhongshan-logo.png";
+import zhongshanLogo from "@/assets/zhongshan-logo-transparent.png";
 const pillars = [{
   icon: Sprout,
   title: "Raiz no agro",
@@ -39,13 +39,24 @@ export function AboutSection() {
               </p>
             </div>
 
-            {/* Zhongshan Logo */}
+            {/* Zhongshan Logo — estilo carimbo */}
             <div className="mt-10 pt-8 border-t border-border">
-              <div className="inline-block bg-zinc-950 rounded-xl px-6 py-4">
+              <div
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: "14px 24px",
+                  border: "2.5px dashed rgba(30,80,40,0.4)",
+                  borderRadius: "10px",
+                  transform: "rotate(-1.5deg)",
+                  opacity: 0.85,
+                }}
+              >
                 <img
                   src={zhongshanLogo}
                   alt="Zhongshan Chemical"
-                  className="h-20 sm:h-24 w-auto"
+                  style={{ height: "64px", width: "auto" }}
                 />
               </div>
             </div>
