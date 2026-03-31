@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import zhongshanLogo from "@/assets/zhongshan-logo-hero-white.png";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -56,22 +57,33 @@ export function HeroSection() {
           </div>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
-            <Button
-              variant="hero"
-              size="xl"
-              onClick={() => window.open("https://wa.me/5500000000000", "_blank")}
-            >
-              <MessageCircle className="w-5 h-5" />
-              Quero falar com a Proagro
-            </Button>
-            <Button
-              variant="heroOutline"
-              size="xl"
-              onClick={() => scrollToSection("#produtos")}
-            >
-              Ver produtos disponíveis
-            </Button>
+          <div className="flex flex-col items-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Button
+                variant="hero"
+                size="xl"
+                onClick={() => window.open("https://wa.me/5500000000000", "_blank")}
+              >
+                <MessageCircle className="w-5 h-5" />
+                Quero falar com a Proagro
+              </Button>
+              <Button
+                variant="heroOutline"
+                size="xl"
+                onClick={() => scrollToSection("#produtos")}
+              >
+                Ver produtos disponíveis
+              </Button>
+            </div>
+
+            <div className="mt-6 md:mt-7 flex justify-center">
+              <img
+                src={zhongshanLogo}
+                alt="Zhongshan Chemical"
+                className="w-[180px] sm:w-[210px] md:w-[240px] h-auto opacity-95 drop-shadow-[0_8px_22px_rgba(0,0,0,0.22)] select-none"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
       </div>
