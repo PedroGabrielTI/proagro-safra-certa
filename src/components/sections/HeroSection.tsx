@@ -84,18 +84,16 @@ export function HeroSection() {
 
       {/* Zhongshan — selo agente oficial */}
       <div
-        className="absolute bottom-10 right-8 hidden sm:flex"
+        className="absolute top-24 left-8 hidden sm:flex"
         style={{
           flexDirection: "column",
           alignItems: "center",
-          gap: "5px",
-          padding: "10px 18px 12px",
-          border: "1.5px dashed rgba(255,255,255,0.5)",
+          gap: "4px",
+          padding: "10px 16px 12px",
+          border: "1.5px dashed rgba(255,255,255,0.45)",
           borderRadius: "10px",
           transform: "rotate(-1.5deg)",
-          opacity: 0.9,
-          backgroundColor: "rgba(0,0,0,0.25)",
-          backdropFilter: "blur(2px)",
+          opacity: 0.85,
         }}
       >
         <span style={{
@@ -103,14 +101,14 @@ export function HeroSection() {
           fontWeight: 700,
           letterSpacing: "0.2em",
           textTransform: "uppercase",
-          color: "rgba(255,255,255,0.85)",
+          color: "rgba(255,255,255,0.8)",
         }}>
           Agente Oficial
         </span>
         <img
           src={zhongshanLogo}
           alt="Zhongshan Chemical"
-          style={{ height: "56px", width: "auto" }}
+          style={{ height: "52px", width: "auto" }}
         />
       </div>
     </section>
