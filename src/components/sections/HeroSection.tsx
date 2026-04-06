@@ -90,10 +90,12 @@ export function HeroSection() {
           alignItems: "center",
           gap: "5px",
           padding: "10px 18px 12px",
-          border: "1.5px dashed rgba(255,255,255,0.35)",
+          border: "1.5px dashed rgba(255,255,255,0.5)",
           borderRadius: "10px",
           transform: "rotate(-1.5deg)",
-          opacity: 0.6,
+          opacity: 0.9,
+          backgroundColor: "rgba(0,0,0,0.25)",
+          backdropFilter: "blur(2px)",
         }}
       >
         <span style={{
@@ -101,14 +103,14 @@ export function HeroSection() {
           fontWeight: 700,
           letterSpacing: "0.2em",
           textTransform: "uppercase",
-          color: "rgba(255,255,255,0.7)",
+          color: "rgba(255,255,255,0.85)",
         }}>
           Agente Oficial
         </span>
         <img
           src={zhongshanLogo}
           alt="Zhongshan Chemical"
-          style={{ height: "44px", width: "auto", filter: "brightness(0) invert(1)" }}
+          style={{ height: "56px", width: "auto" }}
         />
       </div>
     </section>
