@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import zhongshanLogo from "@/assets/zhongshan-logo.png";
+import zhongshanLogo from "@/assets/zhongshan-logo-transparent.png";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -74,23 +74,42 @@ export function HeroSection() {
               Ver produtos disponíveis
             </Button>
           </div>
-
-          <div
-            className="mt-8 md:mt-10 flex justify-center animate-fade-up"
-            style={{ animationDelay: "0.4s" }}
-          >
-            <img
-              src={zhongshanLogo}
-              alt="Zhongshan Chemical"
-              className="h-auto w-[220px] sm:w-[250px] md:w-[290px] object-contain opacity-95 drop-shadow-[0_10px_28px_rgba(0,0,0,0.22)]"
-            />
-          </div>
         </div>
       </div>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-8 h-8 text-primary-foreground/60" />
+      </div>
+
+      {/* Zhongshan — selo agente oficial */}
+      <div
+        className="absolute top-24 left-8 hidden sm:flex"
+        style={{
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "4px",
+          padding: "10px 16px 12px",
+          border: "1.5px dashed rgba(255,255,255,0.45)",
+          borderRadius: "10px",
+          transform: "rotate(-1.5deg)",
+          opacity: 0.85,
+        }}
+      >
+        <span style={{
+          fontSize: "8px",
+          fontWeight: 700,
+          letterSpacing: "0.2em",
+          textTransform: "uppercase",
+          color: "rgba(255,255,255,0.8)",
+        }}>
+          Agente Oficial
+        </span>
+        <img
+          src={zhongshanLogo}
+          alt="Zhongshan Chemical"
+          style={{ height: "32px", width: "auto" }}
+        />
       </div>
     </section>
   );
