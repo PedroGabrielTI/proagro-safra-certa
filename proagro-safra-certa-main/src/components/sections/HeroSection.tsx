@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import zhongshanLogo from "@/assets/zhongshan-gold.png";
+import zhongshanLogo from "@/assets/zhongshan-logo-transparent.png";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -82,15 +82,35 @@ export function HeroSection() {
         <ChevronDown className="w-8 h-8 text-primary-foreground/60" />
       </div>
 
-      {/* Zhongshan logo */}
-      <div className="absolute top-24 left-8 hidden sm:block opacity-95">
+      {/* Zhongshan — selo agente oficial */}
+      <div
+        className="absolute top-24 left-8 hidden sm:flex"
+        style={{
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "4px",
+          padding: "10px 16px 12px",
+          border: "1.5px dashed rgba(255,255,255,0.45)",
+          borderRadius: "10px",
+          transform: "rotate(-1.5deg)",
+          opacity: 0.85,
+        }}
+      >
+        <span style={{
+          fontSize: "8px",
+          fontWeight: 700,
+          letterSpacing: "0.2em",
+          textTransform: "uppercase",
+          color: "rgba(255,255,255,0.8)",
+        }}>
+          Agente Oficial
+        </span>
         <img
           src={zhongshanLogo}
           alt="Zhongshan Chemical"
-          className="h-10 md:h-12 w-auto"
+          style={{ height: "32px", width: "auto" }}
         />
       </div>
-
     </section>
   );
 }
