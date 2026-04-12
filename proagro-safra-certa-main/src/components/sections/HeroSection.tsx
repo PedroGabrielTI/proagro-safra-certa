@@ -108,7 +108,7 @@ export function HeroSection() {
         <img
           src={zhongshanLogo}
           alt="Zhongshan Chemical"
-          style={{ height: "52px", width: "auto" }}
+          style={{ height: "36px", width: "auto" }}
         />
       </div>
     </section>
