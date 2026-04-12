@@ -89,7 +89,7 @@ export function HeroSection() {
           flexDirection: "column",
           alignItems: "center",
           gap: "6px",
-          padding: "10px 16px 12px",
+          padding: "10px 18px 12px",
           border: "1.5px dashed rgba(212,175,55,0.6)",
           borderRadius: "10px",
           transform: "rotate(-1.5deg)",
