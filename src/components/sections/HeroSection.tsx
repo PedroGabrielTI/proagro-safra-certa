@@ -16,6 +16,7 @@ export function HeroSection() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
+      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -23,28 +24,26 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-hero-gradient opacity-85" />
       </div>
 
+      {/* Content */}
       <div className="container relative z-10 pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-3xl mx-auto text-center">
+          {/* Headline em 2 linhas */}
+          {/* 
+            Alternativas de headline:
+            Opção B: "Defensivos que você já conhece." / "Com preço que fecha a conta."
+            Opção C: "Os mesmos defensivos de sempre." / "Com o preço que você sempre quis."
+          */}
           <h1 className="font-display font-bold leading-tight mb-6 animate-fade-up">
-            <span className="block text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-              Genéricos que você já confia.
-            </span>
-            <span className="block text-agro-wheat text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 md:mt-3">
-              Com preço que fecha a conta da safra.
-            </span>
+            <span className="block text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Genéricos que você já confia.</span>
+            <span className="block text-agro-wheat text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 md:mt-3">Com preço que fecha a conta da safra.</span>
           </h1>
 
-          <p
-            className="text-base md:text-lg text-primary-foreground/90 mb-6 max-w-2xl mx-auto animate-fade-up"
-            style={{ animationDelay: "0.1s" }}
-          >
+          <p className="text-base md:text-lg text-primary-foreground/90 mb-6 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
             A Proagro conecta você direto à indústria de genéricos regulados no Brasil, para comprar para a safra com segurança e economia.
           </p>
 
-          <div
-            className="flex flex-col gap-2 md:flex-row md:justify-center md:gap-6 mb-8 animate-fade-up"
-            style={{ animationDelay: "0.2s" }}
-          >
+          {/* Bullets */}
+          <div className="flex flex-col gap-2 md:flex-row md:justify-center md:gap-6 mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             {[
               "Defensivos já conhecidos no campo",
               "Registro e segurança garantidos no Brasil",
@@ -57,10 +56,8 @@ export function HeroSection() {
             ))}
           </div>
 
-          <div
-            className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up"
-            style={{ animationDelay: "0.3s" }}
-          >
+          {/* CTAs */}
+          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <Button
               variant="hero"
               size="xl"
@@ -77,22 +74,42 @@ export function HeroSection() {
               Ver produtos disponíveis
             </Button>
           </div>
-
-          <div
-            className="mt-6 flex justify-center animate-fade-up"
-            style={{ animationDelay: "0.35s" }}
-          >
-            <img
-              src={zhongshanLogo}
-              alt="Zhongshan Chemical"
-              className="w-[150px] sm:w-[170px] md:w-[190px] h-auto opacity-95 drop-shadow-[0_0_10px_rgba(255,215,120,0.22)]"
-            />
-          </div>
         </div>
       </div>
 
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-8 h-8 text-primary-foreground/60" />
+      </div>
+
+      {/* Zhongshan — selo agente oficial */}
+      <div
+        className="absolute top-24 left-8 hidden sm:flex"
+        style={{
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "4px",
+          padding: "10px 16px 12px",
+          border: "1.5px dashed rgba(255,255,255,0.45)",
+          borderRadius: "10px",
+          transform: "rotate(-1.5deg)",
+          opacity: 0.85,
+        }}
+      >
+        <span style={{
+          fontSize: "8px",
+          fontWeight: 700,
+          letterSpacing: "0.2em",
+          textTransform: "uppercase",
+          color: "rgba(255,255,255,0.8)",
+        }}>
+          Agente Oficial
+        </span>
+        <img
+          src={zhongshanLogo}
+          alt="Zhongshan Chemical"
+          style={{ height: "32px", width: "auto" }}
+        />
       </div>
     </section>
   );
