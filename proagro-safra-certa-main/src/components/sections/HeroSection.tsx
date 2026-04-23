@@ -27,12 +27,6 @@ export function HeroSection() {
       {/* Content */}
       <div className="container relative z-10 pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-3xl mx-auto text-center">
-          {/* Headline em 2 linhas */}
-          {/* 
-            Alternativas de headline:
-            Opção B: "Defensivos que você já conhece." / "Com preço que fecha a conta."
-            Opção C: "Os mesmos defensivos de sempre." / "Com o preço que você sempre quis."
-          */}
           <h1 className="font-display font-bold leading-tight mb-6 animate-fade-up">
             <span className="block text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Genéricos que você já confia.</span>
             <span className="block text-agro-wheat text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 md:mt-3">Com preço que fecha a conta da safra.</span>
@@ -84,7 +78,7 @@ export function HeroSection() {
 
       {/* Zhongshan — selo agente oficial */}
       <div
-        className="absolute top-24 left-8 hidden sm:flex"
+        className="absolute top-28 left-10 hidden sm:flex z-20"
         style={{
           flexDirection: "column",
           alignItems: "center",
@@ -92,8 +86,10 @@ export function HeroSection() {
           padding: "10px 16px 12px",
           border: "1.5px dashed rgba(255,255,255,0.45)",
           borderRadius: "10px",
-          transform: "rotate(-1.5deg)",
-          opacity: 0.85,
+          transform: "rotate(-2deg)",
+          opacity: 0.95,
+          background: "rgba(255,255,255,0.05)",
+          backdropFilter: "blur(2px)",
         }}
       >
         <span style={{
@@ -101,14 +97,14 @@ export function HeroSection() {
           fontWeight: 700,
           letterSpacing: "0.2em",
           textTransform: "uppercase",
-          color: "rgba(255,255,255,0.8)",
+          color: "rgba(255,255,255,0.82)",
         }}>
           Agente Oficial
         </span>
         <img
           src={zhongshanLogo}
           alt="Zhongshan Chemical"
-          style={{ height: "32px", width: "auto" }}
+          className="w-[170px] object-contain mix-blend-multiply"
         />
       </div>
     </section>
