@@ -16,7 +16,6 @@ export function HeroSection() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBg})` }}
@@ -24,15 +23,8 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-hero-gradient opacity-85" />
       </div>
 
-      {/* Content */}
       <div className="container relative z-10 pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-3xl mx-auto text-center">
-          {/* Headline em 2 linhas */}
-          {/* 
-            Alternativas de headline:
-            Opção B: "Defensivos que você já conhece." / "Com preço que fecha a conta."
-            Opção C: "Os mesmos defensivos de sempre." / "Com o preço que você sempre quis."
-          */}
           <h1 className="font-display font-bold leading-tight mb-6 animate-fade-up">
             <span className="block text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Genéricos que você já confia.</span>
             <span className="block text-agro-wheat text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 md:mt-3">Com preço que fecha a conta da safra.</span>
@@ -42,7 +34,6 @@ export function HeroSection() {
             A Proagro conecta você direto à indústria de genéricos regulados no Brasil, para comprar para a safra com segurança e economia.
           </p>
 
-          {/* Bullets */}
           <div className="flex flex-col gap-2 md:flex-row md:justify-center md:gap-6 mb-8 animate-fade-up" style={{ animationDelay: "0.2s" }}>
             {[
               "Defensivos já conhecidos no campo",
@@ -56,7 +47,6 @@ export function HeroSection() {
             ))}
           </div>
 
-          {/* CTAs */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-up" style={{ animationDelay: "0.3s" }}>
             <Button
               variant="hero"
@@ -77,23 +67,22 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-8 h-8 text-primary-foreground/60" />
       </div>
 
-      {/* Zhongshan — selo agente oficial */}
       <div
-        className="absolute top-24 left-8 hidden sm:flex"
+        className="absolute top-24 left-1/2 -translate-x-[165%] hidden sm:flex"
         style={{
           flexDirection: "column",
           alignItems: "center",
-          gap: "4px",
-          padding: "10px 16px 12px",
-          border: "1.5px dashed rgba(255,255,255,0.45)",
+          gap: "5px",
+          padding: "10px 14px 11px",
+          border: "1.5px dashed rgba(255,255,255,0.38)",
           borderRadius: "10px",
-          transform: "rotate(-1.5deg)",
-          opacity: 0.85,
+          background: "rgba(255,255,255,0.03)",
+          backdropFilter: "blur(2px)",
+          opacity: 0.92,
         }}
       >
         <span style={{
@@ -101,14 +90,14 @@ export function HeroSection() {
           fontWeight: 700,
           letterSpacing: "0.2em",
           textTransform: "uppercase",
-          color: "rgba(255,255,255,0.8)",
+          color: "rgba(255,255,255,0.82)",
         }}>
           Agente Oficial
         </span>
         <img
           src={zhongshanLogo}
           alt="Zhongshan Chemical"
-          style={{ height: "36px", width: "auto" }}
+          style={{ height: "40px", width: "auto", objectFit: "contain" }}
         />
       </div>
     </section>
