@@ -1,5 +1,4 @@
 import { Sprout, ShieldCheck, Target } from "lucide-react";
-import zhongshanLogo from "@/assets/zhongshan-logo-transparent.png";
 const pillars = [{
   icon: Sprout,
   title: "Raiz no agro",

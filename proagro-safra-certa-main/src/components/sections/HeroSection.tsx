@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import zhongshanLogo from "@/assets/zhongshan-logo-transparent.png";
+import zhongshanLogo from "@/assets/zhongshan.png";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -27,7 +27,28 @@ export function HeroSection() {
       {/* Content */}
       <div className="container relative z-10 pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="font-display font-bold leading-tight mb-6 animate-fade-up">
+          {/* Headline em 2 linhas */}
+          {/* 
+            Alternativas de headline:
+            Opção B: "Defensivos que você já conhece." / "Com preço que fecha a conta."
+            Opção C: "Os mesmos defensivos de sempre." / "Com o preço que você sempre quis."
+          */}
+          
+        {/* CARIMBO */}
+        <div className="mt-6 z-20 flex justify-center rotate-[-2deg]">
+          <div className="border border-dashed border-white/30 rounded-lg px-5 py-3 bg-white/5 backdrop-blur-sm">
+            <p className="text-[10px] tracking-[2px] text-white/70 mb-1 text-center">
+              AGENTE OFICIAL
+            </p>
+            <img
+              src={zhongshanLogo}
+              alt="Zhongshan Chemical"
+              className="w-[170px] object-contain mix-blend-multiply opacity-95"
+            />
+          </div>
+        </div>
+
+        <h1 className="font-display font-bold leading-tight mb-6 animate-fade-up">
             <span className="block text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Genéricos que você já confia.</span>
             <span className="block text-agro-wheat text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 md:mt-3">Com preço que fecha a conta da safra.</span>
           </h1>
@@ -74,38 +95,6 @@ export function HeroSection() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-8 h-8 text-primary-foreground/60" />
-      </div>
-
-      {/* Zhongshan — selo agente oficial */}
-      <div
-        className="absolute top-28 left-10 hidden sm:flex z-20"
-        style={{
-          flexDirection: "column",
-          alignItems: "center",
-          gap: "4px",
-          padding: "10px 16px 12px",
-          border: "1.5px dashed rgba(255,255,255,0.45)",
-          borderRadius: "10px",
-          transform: "rotate(-2deg)",
-          opacity: 0.95,
-          background: "rgba(255,255,255,0.05)",
-          backdropFilter: "blur(2px)",
-        }}
-      >
-        <span style={{
-          fontSize: "8px",
-          fontWeight: 700,
-          letterSpacing: "0.2em",
-          textTransform: "uppercase",
-          color: "rgba(255,255,255,0.82)",
-        }}>
-          Agente Oficial
-        </span>
-        <img
-          src={zhongshanLogo}
-          alt="Zhongshan Chemical"
-          className="w-[170px] object-contain mix-blend-multiply"
-        />
       </div>
     </section>
   );
