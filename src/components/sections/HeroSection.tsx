@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import zhongshanLogo from "@/assets/zhongshan.png";
+import zhongshanLogo from "@/assets/zhongshan.svg";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
