@@ -24,6 +24,23 @@ export function HeroSection() {
         <div className="absolute inset-0 bg-hero-gradient opacity-85" />
       </div>
 
+
+      {/* Official Agent Stamp */}
+      <div className="container absolute top-28 left-0 right-0 z-20 pointer-events-none hidden md:block">
+        <div className="w-fit rotate-[-2deg]">
+          <div className="border border-dashed border-white/35 rounded-xl px-5 py-3 bg-white/10 backdrop-blur-sm shadow-sm">
+            <p className="text-[10px] tracking-[2px] font-semibold text-white/75 mb-1 text-center">
+              AGENTE OFICIAL
+            </p>
+            <img
+              src={zhongshanLogo}
+              alt="Zhongshan Chemical"
+              className="w-[150px] object-contain mix-blend-multiply opacity-95"
+            />
+          </div>
+        </div>
+      </div>
+
       {/* Content */}
       <div className="container relative z-10 pt-32 pb-20 md:pt-40 md:pb-28">
         <div className="max-w-3xl mx-auto text-center">
@@ -33,22 +50,7 @@ export function HeroSection() {
             Opção B: "Defensivos que você já conhece." / "Com preço que fecha a conta."
             Opção C: "Os mesmos defensivos de sempre." / "Com o preço que você sempre quis."
           */}
-          
-        {/* CARIMBO */}
-        <div className="mt-6 z-20 flex justify-center rotate-[-2deg]">
-          <div className="border border-dashed border-white/30 rounded-lg px-5 py-3 bg-white/5 backdrop-blur-sm">
-            <p className="text-[10px] tracking-[2px] text-white/70 mb-1 text-center">
-              AGENTE OFICIAL
-            </p>
-            <img
-              src={zhongshanLogo}
-              alt="Zhongshan Chemical"
-              className="w-[170px] object-contain mix-blend-multiply opacity-95"
-            />
-          </div>
-        </div>
-
-        <h1 className="font-display font-bold leading-tight mb-6 animate-fade-up">
+          <h1 className="font-display font-bold leading-tight mb-6 animate-fade-up">
             <span className="block text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">Genéricos que você já confia.</span>
             <span className="block text-agro-wheat text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 md:mt-3">Com preço que fecha a conta da safra.</span>
           </h1>
