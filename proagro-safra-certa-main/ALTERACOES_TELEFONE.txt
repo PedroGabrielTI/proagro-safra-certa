@@ -1,0 +1,8 @@
+Número atualizado para: 5531995337481
+Link WhatsApp: https://wa.me/5531995337481
+Telefone visível: (31) 99533-7481
+
+Arquivos alterados:
+- src/components/sections/HowToBuySection.tsx
+- src/components/sections/ContactSection.tsx
+- src/components/sections/HeroSection.tsx

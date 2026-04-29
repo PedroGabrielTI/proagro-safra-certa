@@ -61,7 +61,7 @@ export function HeroSection() {
             <Button
               variant="hero"
               size="xl"
-              onClick={() => window.open("https://wa.me/+55 31 99533-7481", "_blank")}
+              onClick={() => window.open("https://wa.me/5531995337481", "_blank")}
             >
               <MessageCircle className="w-5 h-5" />
               Quero falar com a Proagro

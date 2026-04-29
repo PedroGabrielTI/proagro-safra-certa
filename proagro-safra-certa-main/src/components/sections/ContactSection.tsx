@@ -55,7 +55,7 @@ export function ContactSection() {
                 variant="whatsapp"
                 size="xl"
                 className="w-full"
-                onClick={() => window.open("https://wa.me/+55 31 99533-7481", "_blank")}
+                onClick={() => window.open("https://wa.me/5531995337481", "_blank")}
               >
                 <MessageCircle className="w-5 h-5" />
                 Chamar no WhatsApp
