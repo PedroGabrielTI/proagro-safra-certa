@@ -71,7 +71,7 @@ export function HowToBuySection() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="whatsapp" size="xl" onClick={() => window.open("https://wa.me/5500000000000", "_blank")}>
+          <Button variant="whatsapp" size="xl" onClick={() => window.open("https://wa.me/+55 31 99533-7481", "_blank")}>
             Falar com um especialista Proagro
           </Button>
         </div>
