@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
-import zhongshanLogo from "@/assets/zhongshan.png";
+import zhongshanLogo from "@/assets/zhongshan-logo-transparent.png";
 
 export function HeroSection() {
   const scrollToSection = (href: string) => {
@@ -22,23 +22,6 @@ export function HeroSection() {
         style={{ backgroundImage: `url(${heroBg})` }}
       >
         <div className="absolute inset-0 bg-hero-gradient opacity-85" />
-      </div>
-
-
-      {/* Official Agent Stamp */}
-      <div className="container absolute top-28 left-0 right-0 z-20 pointer-events-none hidden md:block">
-        <div className="w-fit rotate-[-2deg]">
-          <div className="border border-dashed border-white/35 rounded-xl px-5 py-3 bg-white/10 backdrop-blur-sm shadow-sm">
-            <p className="text-[10px] tracking-[2px] font-semibold text-white/75 mb-1 text-center">
-              AGENTE OFICIAL
-            </p>
-            <img
-              src={zhongshanLogo}
-              alt="Zhongshan Chemical"
-              className="w-[150px] object-contain mix-blend-multiply opacity-95"
-            />
-          </div>
-        </div>
       </div>
 
       {/* Content */}
@@ -97,6 +80,36 @@ export function HeroSection() {
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <ChevronDown className="w-8 h-8 text-primary-foreground/60" />
+      </div>
+
+      {/* Zhongshan — selo agente oficial */}
+      <div
+        className="absolute top-24 left-8 hidden sm:flex"
+        style={{
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "6px",
+          padding: "10px 18px 12px",
+          border: "1.5px dashed rgba(255,255,255,0.45)",
+          borderRadius: "10px",
+          transform: "rotate(-1.5deg)",
+          opacity: 0.9,
+        }}
+      >
+        <span style={{
+          fontSize: "8px",
+          fontWeight: 700,
+          letterSpacing: "0.2em",
+          textTransform: "uppercase",
+          color: "rgba(255,255,255,0.7)",
+        }}>
+          Agente Oficial
+        </span>
+        <img
+          src={zhongshanLogo}
+          alt="Zhongshan Chemical"
+          style={{ height: "36px", width: "auto" }}
+        />
       </div>
     </section>
   );
