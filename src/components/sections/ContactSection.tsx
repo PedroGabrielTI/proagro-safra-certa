@@ -80,7 +80,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="text-sm text-primary-foreground/60">Telefone</p>
-                  <p className="font-medium text-primary-foreground">(55) 31995337481</p>
+                  <p className="font-medium text-primary-foreground">5531995337481</p>
                 </div>
               </div>
 
