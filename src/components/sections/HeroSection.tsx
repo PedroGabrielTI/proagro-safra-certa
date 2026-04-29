@@ -35,7 +35,7 @@ export function HeroSection() {
             <img
               src={zhongshanLogo}
               alt="Zhongshan Chemical"
-              className="w-[150px] object-contain mix-blend-multiply opacity-95"
+              className="w-[150px] object-contain opacity-95"
             />
           </div>
         </div>
