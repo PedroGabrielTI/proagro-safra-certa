@@ -61,7 +61,7 @@ export function HeroSection() {
             <Button
               variant="hero"
               size="xl"
-              onClick={() => window.open("https://wa.me/5531995337481", "_blank")}
+              onClick={() => window.open("https://wa.me/5500000000000", "_blank")}
             >
               <MessageCircle className="w-5 h-5" />
               Quero falar com a Proagro
@@ -84,16 +84,16 @@ export function HeroSection() {
 
       {/* Zhongshan — selo agente oficial */}
       <div
-        className="absolute top-24 left-8 hidden sm:flex"
+        className="absolute top-16 left-8 hidden sm:flex"
         style={{
           flexDirection: "column",
           alignItems: "center",
-          gap: "6px",
-          padding: "10px 18px 12px",
+          gap: "4px",
+          padding: "10px 16px 12px",
           border: "1.5px dashed rgba(255,255,255,0.45)",
           borderRadius: "10px",
           transform: "rotate(-1.5deg)",
-          opacity: 0.9,
+          opacity: 0.85,
         }}
       >
         <span style={{
@@ -101,14 +101,14 @@ export function HeroSection() {
           fontWeight: 700,
           letterSpacing: "0.2em",
           textTransform: "uppercase",
-          color: "rgba(255,255,255,0.7)",
+          color: "rgba(255,255,255,0.8)",
         }}>
           Agente Oficial
         </span>
         <img
           src={zhongshanLogo}
           alt="Zhongshan Chemical"
-          style={{ height: "36px", width: "auto" }}
+          style={{ height: "32px", width: "auto" }}
         />
       </div>
     </section>
