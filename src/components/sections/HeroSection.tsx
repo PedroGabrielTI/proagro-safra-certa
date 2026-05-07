@@ -24,7 +24,7 @@ export function HeroSection() {
       </div>
 
       {/* Official Agent Stamp */}
-      <div className="container absolute top-12 left-0 right-0 z-20 pointer-events-none hidden md:block">
+      <div className="container absolute top-16 left-0 right-0 z-20 pointer-events-none hidden md:block">
         <div className="w-fit rotate-[-2deg]">
           <div className="border border-dashed border-white/40 rounded-2xl px-6 py-4 bg-white/10 backdrop-blur-sm shadow-md">
             <p className="text-[10px] tracking-[3px] font-semibold text-white/80 mb-2 text-center">
